@@ -1,0 +1,66 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "organizeImports": {
+    "enabled": false
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "suspicious": {
+        "noConsoleLog": "warn",
+        "noShadowRestrictedNames": "off",
+        "noArrayIndexKey": "off"
+      },
+      "a11y": {
+        "noSvgWithoutTitle": "off",
+        "useSemanticElements": "off",
+        "useFocusableInteractive": "off",
+        "useKeyWithClickEvents": "off",
+        "useButtonType": "off",
+        "useMediaCaption": "off"
+      },
+      "correctness": {
+        "useExhaustiveDependencies": "off",
+        "useJsxKeyInIterable": "off"
+      },
+      "complexity": {
+        "noBannedTypes": "off"
+      }
+    },
+    "ignore": [
+      "node_modules",
+      ".next",
+      "dist",
+      "esmbuild",
+      "packages/huddle01_flutter_client",
+      "packages/unity_webgl",
+      "packages/unity"
+    ]
+  },
+  "formatter": {
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "enabled": true,
+    "ignore": [
+      "node_modules",
+      ".next",
+      "dist",
+      "gen/*",
+      "esmbuild",
+      "artifacts",
+      "packages/huddle01_flutter_client",
+      "packages/unity_webgl",
+      "packages/unity",
+      "typechain-types/"
+    ]
+  },
+  "files": {
+    "ignore": ["node_modules", ".next", "dist"]
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single"
+    }
+  }
+}
